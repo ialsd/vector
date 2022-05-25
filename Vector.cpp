@@ -105,7 +105,7 @@ void Vector::insert(const Value* values, size_t size, size_t pos)
             }
         reserve(tmp);
     }
-    for (size_t i = _size + size - 1, j = size - 1; i >= pos; i--)
+    for (int i = _size + size - 1, j = size - 1; i >= pos; i--)
         {
             if (pos + size < i)
             {
